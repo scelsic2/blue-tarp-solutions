@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --logo-blue: rgb(40, 82, 154);
+  --logo-gold: rgb(242, 202, 88);
+}
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--logo-blue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-nav :last-child {
+  margin-right: 30px;
+}
+
+.header-nav > a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: var(--logo-gold);
+  font-weight: bold;
+  font-size: large;
+}
+
+/* MAIN */
+/* .main {
+  display: flex;
+  flex-direction: row;
+} */
+
+.main-h1-h4 {
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  line-height: 2em;
+}
+
+.main-h1 {
+  margin-bottom: 10px;
+}
+
+.main-button-image-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-button {
+  height: fit-content;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--logo-blue);
+  color: var(--logo-gold);
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* TECHNOLOGIES */
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.one-technology-wrapper {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+margin: auto;
+}
+
+.one-technology-icon {
+  padding-right: 20px;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  background-color: var(--logo-blue);
+  color: var(--logo-gold);
 }
