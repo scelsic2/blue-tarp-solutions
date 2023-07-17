@@ -61,6 +61,11 @@
   display: block;
 }
 
+.header-text.active {
+  background-color: var(--logo-gold);
+  color: var(--logo-blue);
+}
+
 /* -----HOME----- */
 
 .main-h1-h4 {
