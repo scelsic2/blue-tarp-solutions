@@ -17,28 +17,31 @@ function Header(props) {
   }
 
   return (
-    <header className="header">
+    <header className={`header ${isOpen ? "is-open" : ""}`}>
       <a href="/">
         <img src={logo} alt="Blue Tarp Solutions Logo" className="logo" />
       </a>
 
-      <div className="header-nav-wrapper">
+      <div className='header-nav-wrapper'>
         <nav className="hamburger-nav" onClick={toggleMenu}>
-          <a className="hamburger">
+          <a className={`hamburger ${isOpen ? "hide-me" : ""}`}>
             <box-icon name="menu" color="var(--logo-gold)"></box-icon>
+          </a>
+          <a className={`hamburger ${isOpen ? "show-me" : ""} hide-me`}>
+            <box-icon name="x" color="var(--logo-gold)"></box-icon>
           </a>
         </nav>
 
         <nav className={`header-nav ${isOpen ? "is-open" : ""}`}>
-          <a href="/about" className="header-text" onClick={handleAbout}>
+          <NavLink to="/about" className="header-text" onClick={handleAbout}>
             <p>About Us</p>
-          </a>
-          <a href="/whatwedo" className="header-text">
+          </NavLink>
+          <NavLink to="/whatwedo" className="header-text">
             <p>What We Do</p>
-          </a>
-          <a href="/howwedoit" className="header-text">
+          </NavLink>
+          <NavLink to="/howwedoit" className="header-text">
             <p>How We Do It</p>
-          </a>
+          </NavLink>
         </nav>
       </div>
     </header>
