@@ -53,6 +53,14 @@
   display: none;
 }
 
+.hide-me {
+  display: none;
+}
+
+.show-me {
+  display: block;
+}
+
 /* -----HOME----- */
 
 .main-h1-h4 {
@@ -292,6 +300,11 @@
 
 /* -----MEDIA QUERIES----- */
 @media only screen and (max-width: 800px){
+  .header.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+
   .header-nav {
     display: none;
   }
@@ -316,6 +329,10 @@
 
   .hamburger {
     padding: 30px;
+  }
+
+  .hamburger.hide-me {
+    padding: 0;
   }
 
   .hamburger :hover {

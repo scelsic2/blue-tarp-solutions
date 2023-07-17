@@ -232,8 +232,24 @@ function Home(props) {
               <p>Node.js</p>
             </div>
           </div>
+
+          <div className="one-technology-wrapper">
+            <div className="one-technology-icon">
+              <box-icon
+                type="logo"
+                name="wordpress"
+                color="var(--logo-blue)"
+                size="lg"
+              ></box-icon>
+            </div>
+            <div className="one-technology-description">
+              <p>WordPress</p>
+            </div>
+          </div>
+
         </div>
       </div>
+
       <div id="contact-wrapper">
         <h2>Contact Us</h2>
         <form>
