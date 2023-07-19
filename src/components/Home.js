@@ -10,12 +10,9 @@ function Home(props) {
     <>
       <div className="main">
         <div className="main-h1-h4">
-          <h1 className="main-h1">Catchy Title</h1>
+          <h1 className="main-h1">Customer-First Web Development</h1>
           <h4 className="main-h4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Mattis
-            pellentesque id nibh tortor.
+          Discover the art of seamless web development at Blue Tarp Solutions. Whether you're starting from scratch or need a rescue mission for a struggling site, our mission is to exceed your expectations and provide personalized solutions for all your website needs.
           </h4>
         </div>
         <div className="main-button-image-div">
@@ -252,7 +249,7 @@ function Home(props) {
 
       <div id="contact-wrapper">
         <h2>Contact Us</h2>
-        <form>
+        <form action="mailto:scelsic2@gmail.com">
           <div className="first-last-name">
             <div className="firstname">
               <label for="firstname">First Name * </label>
@@ -311,8 +308,11 @@ function Home(props) {
               required
             ></textarea>
           </div>
+
         <div className="submit-btn-div">
-          <button type="submit" className="main-button">Submit</button>
+          <div class="g-recaptcha" id="html_element" data-sitekey="6LcpzjknAAAAALGM_qTknG7VfRwjE9aeZ2ptE6w6"></div>
+          <br/>
+          <button type="submit" className="main-button" value={"Submit"}>Submit</button>
         </div>
         </form>
       </div>

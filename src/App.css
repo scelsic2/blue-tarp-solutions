@@ -203,9 +203,12 @@
   font-size: large;
 }
 
+
 .submit-btn-div {
+  margin: auto;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* -----ABOUT US----- */
@@ -213,6 +216,14 @@
 .about-us-wrapper > h1 {
   padding-bottom: 20px;
   text-align: center;
+}
+
+.about-us-h4 {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 75%;
+  line-height: 1.75em;
 }
 
 .about-us-card {
@@ -280,6 +291,10 @@
   font-size: small;
 }
 
+.footer-nav-1 {
+  line-height: 1.5em;
+}
+
 .footer-nav-2 {
   display: flex;
   flex-direction: column;
@@ -293,6 +308,17 @@
 
 .email-div > a {
   margin-right: 5px;
+}
+
+.location-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location-div > p {
+  margin-right: 5px;
+  font-size: small;
 }
 
 .copyright {
@@ -354,6 +380,11 @@
     margin: 20px 0px
   }
 
+  .about-us-h4 {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
   .about-us-card {
     display: flex;
     flex-direction: column;
@@ -385,7 +416,7 @@
 
 @media only screen and (max-width: 1100px) {
 
-  
+
   .about-us-card {
     display: flex;
     flex-direction: column;
@@ -480,4 +511,9 @@
   #contact-wrapper {
     width: 30%
   }
+
+  .about-us-h4 {
+    width: 35%;
+  }
+
 } 
