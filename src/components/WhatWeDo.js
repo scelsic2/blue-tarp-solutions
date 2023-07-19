@@ -10,7 +10,7 @@ function WhatWeDo(props) {
                 <h3>Facelifts</h3>
               </div>
               <div className='what-we-do-p'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+                <p>Let us help you revitalize your online presence by giving your website a modern and captivating new look that engages visitors and boosts your online success.</p> 
               </div>
               
             </div>
@@ -21,7 +21,7 @@ function WhatWeDo(props) {
                 <h3>Rescue Abandoned Projects</h3>
               </div>
             <div className='what-we-do-p'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>           
+              <p>We can help you rescue your abandoned projects and bring them back to life. We specialize in salvaging and revitalizing neglected websites, turning them into thriving online assets that meet your goals.</p>           
             </div>
 
             </div>
@@ -32,7 +32,7 @@ function WhatWeDo(props) {
                 <h3>New Projects</h3>
               </div>
             <div className='what-we-do-p'></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>From ideation to creation, we are your web development partners in bringing your visions to life and building website solutions tailored to your unique needs and aspirations.</p>
             </div>
 
         </div>
