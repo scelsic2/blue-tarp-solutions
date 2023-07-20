@@ -12,7 +12,7 @@ function HowWeDoIt(props) {
             <h3>In House</h3>
           </div>
           <div className='how-we-do-it-p'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+            <p>Exactly that! We tackle whatever callenges you bring us, quite literally in our own house!</p> 
           </div>
           
         </div>
@@ -23,7 +23,7 @@ function HowWeDoIt(props) {
             <h3>On Shore Partners</h3>
           </div>
         <div className='how-we-do-it-p'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>           
+          <p>Believe it or not, we have friends! If your project requires, we can reach out to bring in specialists to support given areas and finish your project faster.</p>           
         </div>
 
         </div>
@@ -34,7 +34,7 @@ function HowWeDoIt(props) {
             <h3>Near Shore Partners</h3>
           </div>
         <div className='how-we-do-it-p'></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>We leverage our experiences with several near shore partners to rapidly provide the larger headcount you may need for your next billion-dollar idea.</p>
         </div>
 
     </div>
