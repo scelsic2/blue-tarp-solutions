@@ -10,11 +10,11 @@ function AboutUs(props) {
           <h1>About Us</h1>
 
           <div className='about-us-h4'>
-            <h4>Blue Tarp Solutions was founded by a husband and wife team with over 15 years of combined web development experience. Why hire a company to build your website, when you could hire family?</h4>
+            <h4>Blue Tarp Solutions was founded by a husband and wife team with over 16 years of combined web development experience. Why hire a company to build your website, when you could hire family?</h4>
           </div>
           
           <div className='about-us-card'>
-            <img src={nick} alt='headshot of nick scelsi' height={'200px'}/>
+            <img src={nick} alt='Headshot of Nick Scelsi' height={'200px'}/>
             <div className='about-us-description'>
               <h2>Nick Scelsi</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
@@ -22,10 +22,10 @@ function AboutUs(props) {
           </div>
 
           <div className='about-us-card'>
-            <img src={cassandra} alt='headshot of cassandra scelsi' height={'200px'}/> 
+          <img src={cassandra} alt='Headshot of Cassandra Scelsi' height={'200px'}/>
             <div className='about-us-description'>
               <h2>Cassandra Scelsi</h2>
-              <p>Cassandra graduated from Rutgers University Coding Bootcamp. Prior to her web development career, she accummulated 14 years of experience working in higher education.</p>
+              <p>Cassandra graduated from Rutgers University Coding Bootcamp. Prior to her web development career, she worked at the University of South Florida for 14 years where she revitalized operations and streamlined procedures for the center that provides univeristy exam accommodations to students with disabilities. She also holds a Bachelor's Degree in Psychology and a Master's Degree in School Counseling.</p>
             </div>
 
           </div>

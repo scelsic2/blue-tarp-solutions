@@ -233,8 +233,10 @@
   width: 300px;
   margin: auto;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about-us-card > img {
@@ -244,6 +246,16 @@
 
 .about-us-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.about-us-description > h2 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.about-us-description > p {
+  line-height: 1.4em;
 }
 
 /* -----WHAT WE DO----- */
