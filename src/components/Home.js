@@ -249,10 +249,10 @@ function Home(props) {
 
       <div id="contact-wrapper">
         <h2>Contact Us</h2>
-        <form action="mailto:scelsic2@gmail.com">
+        <form action="?" method="POST">
           <div className="first-last-name">
             <div className="firstname">
-              <label for="firstname">First Name * </label>
+              <label htmlFor="firstname">First Name * </label>
               <input
                 type="text"
                 id="firstname"
@@ -263,7 +263,7 @@ function Home(props) {
             </div>
 
             <div className="lastname">
-              <label for="lastname">Last Name * </label>
+              <label htmlFor="lastname">Last Name * </label>
               <input
                 type="text"
                 id="lastname"
@@ -275,7 +275,7 @@ function Home(props) {
           </div>
           <div className="email-company">
             <div className="email">
-              <label for="email">Email * </label>
+              <label htmlFor="email">Email * </label>
               <input
                 type="email"
                 id="email"
@@ -286,7 +286,7 @@ function Home(props) {
             </div>
 
             <div className="company">
-              <label for="company">Company * </label>
+              <label htmlFor="company">Company * </label>
               <input
                 type="text"
                 id="company"
@@ -298,7 +298,7 @@ function Home(props) {
 
           </div>
           <div className="message">
-            <label for="message">Message *</label>
+            <label htmlFor="message">Message *</label>
             <textarea
               type="text"
               id="message"
@@ -310,7 +310,7 @@ function Home(props) {
           </div>
 
         <div className="submit-btn-div">
-          <div class="g-recaptcha" id="html_element" data-sitekey="6LcpzjknAAAAALGM_qTknG7VfRwjE9aeZ2ptE6w6"></div>
+          <div className="g-recaptcha" id="html_element" data-sitekey="6LcpzjknAAAAALGM_qTknG7VfRwjE9aeZ2ptE6w6"></div>
           <br/>
           <button type="submit" className="main-button" value={"Submit"}>Submit</button>
         </div>
