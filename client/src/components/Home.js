@@ -19,14 +19,29 @@ function Home(props) {
   })
 
   const contactForm = async (e) => {
-    // e.preventDefault();
+    // e.preventDefault();    
+    //todo: this isn't the react way to access the form elements but that's what the problem was.
+    let form = {
+      firstname: e.currentTarget.elements.firstname.value,
+      lastname: e.currentTarget.elements.lastname.value,
+      email: e.currentTarget.elements.email.value,
+      company: e.currentTarget.elements.company.value,
+      message: e.currentTarget.elements.message.value
+    };    
+    //form elements are found in e.currentTarget.elements
+    //console.log(e.currentTarget.elements);
+    //I tried setting state here and that didn't work
+    //setContactState(e.currentTarget.elements);
     console.log('Contact Form Submitted!')
     console.log('-----Contact State-----')
     console.log(contactState)
-    let domain = 'http://localhost:3001'
+    let domain = 'localhost:3001'
+    let protocol = 'http://';
 
     try {
-      const res = await axios.post(domain + '/api/contact', contactState)
+      //const res = await axios.post(domain + '/api/contact', contactState)
+      //using form until we figure out why setState is broken
+      const res = await axios.post(protocol + domain + '/api/contact', form)
 
       setContactState({
         firstname:'',
@@ -35,7 +50,7 @@ function Home(props) {
         company: '',
         message:''
       })
-
+      return false;
     } catch (err) {
       if (err.code === 500) {
         console.error(err)

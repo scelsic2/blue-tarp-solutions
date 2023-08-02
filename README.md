@@ -1,3 +1,6 @@
+# Get the correct Node version
+Install NVM and v14 locally
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

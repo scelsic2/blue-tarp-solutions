@@ -17,7 +17,7 @@ function AboutUs(props) {
             <img src={nick} alt='Headshot of Nick Scelsi' height={'200px'}/>
             <div className='about-us-description'>
               <h2>Nick Scelsi</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+              <p>Nick spent the early part of his career as a software engineer specializing in C# .NET on webforms, MVC, then REST web applications. Nick has worked on software in the Marketing and Advertising, Banking, E-Learning, Hospital & Health Care, and Nonprofit Underground Utility location spaces.</p>
             </div>
           </div>
 
