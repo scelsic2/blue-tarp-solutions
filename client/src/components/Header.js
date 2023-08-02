@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 import "boxicons";
 import React, { useState } from "react";
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,25 +13,27 @@ function Header(props) {
   const navigate = useNavigate();
 
   const handleAbout = () => {
-    navigate('/about')
-  }
+    navigate("/about");
+  };
 
   return (
     <header className={`header ${isOpen ? "is-open" : ""}`}>
-      <a href="/">
-        <img src={logo} alt="Blue Tarp Solutions Logo" className="logo" />
-      </a>
+      <div className="mobile-header-wrap">
+        <a href="/">
+          <img src={logo} alt="Blue Tarp Solutions Logo" className="logo" />
+        </a>
 
-      <div className='header-nav-wrapper'>
-        <nav className="hamburger-nav" onClick={toggleMenu}>
+        <div className="hamburger-wrapper" onClick={toggleMenu}>
           <a className={`hamburger ${isOpen ? "hide-me" : ""}`}>
             <box-icon name="menu" color="var(--logo-gold)"></box-icon>
           </a>
-          <a className={`hamburger ${isOpen ? "show-me" : ""} hide-me`}>
+          <a className={`hamburger ${isOpen ? "show-me" : ""} ""`}>
             <box-icon name="x" color="var(--logo-gold)"></box-icon>
           </a>
-        </nav>
+        </div>
+      </div>
 
+      <div className="header-nav-wrapper">
         <nav className={`header-nav ${isOpen ? "is-open" : ""}`}>
           <NavLink to="/about" className="header-text" onClick={handleAbout}>
             <p>About Us</p>
