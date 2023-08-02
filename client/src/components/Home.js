@@ -5,7 +5,64 @@ import mysql from "../assets/MySQL_logo.svg.png";
 import dotnet from "../assets/Microsoft_.NET_logo.svg";
 import ruby from "../assets/Ruby_On_Rails_Logo.svg";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 function Home(props) {
+
+  const [contactState, setContactState] = useState({
+    firstname:'',
+    lastname:'',
+    email:'',
+    company: '',
+    message:''
+  })
+
+  const contactForm = async (e) => {
+    // e.preventDefault();    
+    //todo: this isn't the react way to access the form elements but that's what the problem was.
+    let form = {
+      firstname: e.currentTarget.elements.firstname.value,
+      lastname: e.currentTarget.elements.lastname.value,
+      email: e.currentTarget.elements.email.value,
+      company: e.currentTarget.elements.company.value,
+      message: e.currentTarget.elements.message.value
+    };    
+    //form elements are found in e.currentTarget.elements
+    //console.log(e.currentTarget.elements);
+    //I tried setting state here and that didn't work
+    //setContactState(e.currentTarget.elements);
+    console.log('Contact Form Submitted!')
+    console.log('-----Contact State-----')
+    console.log(contactState)
+    let domain = 'localhost:3001'
+    let protocol = 'http://';
+
+    try {
+      //const res = await axios.post(domain + '/api/contact', contactState)
+      //using form until we figure out why setState is broken
+
+      //this isn't the prettiest way to handle
+      document.getElementById('contact-wrapper').innerHTML = "<h2 style='padding-bottom:20px;'>Thanks! We'll be in touch, soon.</h2>";
+      const res = await axios.post(protocol + domain + '/api/contact', form)
+
+      setContactState({
+        firstname:'',
+        lastname:'',
+        email:'',
+        company: '',
+        message:''
+      }); 
+
+      return false;
+    } catch (err) {
+      if (err.code === 500) {
+        console.error(err)
+      }
+    }
+    
+  }
+
   return (
     <>
       <div className="main">
@@ -249,7 +306,7 @@ function Home(props) {
 
       <div id="contact-wrapper">
         <h2>Contact Us</h2>
-        <form action="?" method="POST">
+        <form onSubmit={contactForm} method="POST">
           <div className="first-last-name">
             <div className="firstname">
               <label htmlFor="firstname">First Name * </label>
@@ -286,13 +343,12 @@ function Home(props) {
             </div>
 
             <div className="company">
-              <label htmlFor="company">Company * </label>
+              <label htmlFor="company">Company</label>
               <input
                 type="text"
                 id="company"
                 className="contact-input"
                 name="company"
-                required
               ></input>
             </div>
 

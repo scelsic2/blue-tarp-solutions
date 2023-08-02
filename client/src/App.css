@@ -49,17 +49,24 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.hamburger-nav {
+.mobile-header-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.hamburger-wrapper {
   display: none;
+  display: flex;
+  align-items: center;
 }
 
 .hide-me {
   display: none;
 }
 
-.show-me {
+/* .show-me {
   display: block;
-}
+} */
 
 .header-text.active {
   background-color: var(--logo-gold);
