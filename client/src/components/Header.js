@@ -12,30 +12,29 @@ function Header(props) {
 
   const navigate = useNavigate();
 
-  const handleAbout = () => {
-    navigate("/about");
-  };
-
   return (
     <header className={`header ${isOpen ? "is-open" : ""}`}>
-      <div className="mobile-header-wrap">
-        <a href="/">
-          <img src={logo} alt="Blue Tarp Solutions Logo" className="logo" />
-        </a>
+      <div className="header-nav-top">
+        <div className="mobile-header-wrap">
+          <a href="/">
+            <img src={logo} alt="Blue Tarp Solutions Logo" className="logo" />
+          </a>
+        </div>
 
-        <div className="hamburger-wrapper" onClick={toggleMenu}>
+        <div className="hamburger-wrapper hide-me" onClick={toggleMenu}>
           <a className={`hamburger ${isOpen ? "hide-me" : ""}`}>
             <box-icon name="menu" color="var(--logo-gold)"></box-icon>
           </a>
-          <a className={`hamburger ${isOpen ? "show-me" : ""} ""`}>
+          <a className={`hamburger ${isOpen ? "show-me" : "hide-me"} `}>
             <box-icon name="x" color="var(--logo-gold)"></box-icon>
           </a>
         </div>
+
       </div>
 
-      <div className="header-nav-wrapper">
+      <div className="header-nav-bottom">
         <nav className={`header-nav ${isOpen ? "is-open" : ""}`}>
-          <NavLink to="/about" className="header-text" onClick={handleAbout}>
+          <NavLink to="/about" className="header-text">
             <p>About Us</p>
           </NavLink>
           <NavLink to="/whatwedo" className="header-text">
