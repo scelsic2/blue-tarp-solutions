@@ -43,7 +43,7 @@ function Home(props) {
       //using form until we figure out why setState is broken
 
       //this isn't the prettiest way to handle
-      document.getElementById('contact-wrapper').innerHTML = "<h2 style='padding-bottom:20px;'>Thanks! We'll be in touch, soon.</h2>";
+      document.getElementById('contact-wrapper').innerHTML = "<h2 style='padding-bottom:30px;'>Thanks! We'll be in touch, soon.</h2>";
       const res = await axios.post(protocol + domain + '/api/contact', form)
 
       setContactState({
