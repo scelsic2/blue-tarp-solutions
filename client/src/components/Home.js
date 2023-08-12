@@ -36,7 +36,7 @@ function Home(props) {
     console.log('-----Contact State-----')
     console.log(contactState)
     let domain = 'localhost:3001'
-    let protocol = 'http://';
+    let protocol = window.location.protocol;
 
     try {
       //const res = await axios.post(domain + '/api/contact', contactState)
@@ -44,7 +44,8 @@ function Home(props) {
 
       //this isn't the prettiest way to handle
       document.getElementById('contact-wrapper').innerHTML = "<h2 style='padding-bottom:30px;'>Thanks! We'll be in touch, soon.</h2>";
-      const res = await axios.post(protocol + domain + '/api/contact', form)
+      //const res = await axios.post(protocol + domain + '/api/contact', form)
+      const res = await axios.post('/api/contact', form)
 
       setContactState({
         firstname:'',
