@@ -1,6 +1,6 @@
 import "./App.css";
-import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
-import React, { Fragment } from 'react'
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import React, { ErrorBoundary } from 'react'
 
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -18,10 +18,12 @@ function App() {
             <main>
 
               <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path="/about" element={<AboutUs />}/>
-                <Route path="/whatwedo" element={<WhatWeDo />}/>
-                <Route path="/howwedoit" element={<HowWeDoIt />}/>
+               
+                  <Route path='/' element={<Home />} />
+                  <Route path="/about" element={<AboutUs />}/>
+                  <Route path="/whatwedo" element={<WhatWeDo />}/>
+                  <Route path="/howwedoit" element={<HowWeDoIt />}/>
+                
               </Routes>
            
             </main>
