@@ -268,6 +268,7 @@
 /* -----WHAT WE DO----- */
 .what-we-do-wrapper, .how-we-do-it-wrapper, .about-us-wrapper {
   padding: 40px;
+  margin: auto;
 }
 
 .what-we-do-wrapper > h1, .how-we-do-it-wrapper > h1, .about-us-wrapper > h1 {
@@ -478,7 +479,6 @@
     margin-top: 20px;
   }
 
-
   .technologies-wrapper {
     width: 75%;
     margin: auto;
@@ -507,6 +507,12 @@
 
 }
 
+@media only screen and (max-width: 1700px) {
+  .what-we-do-wrapper, .how-we-do-it-wrapper, .about-us-wrapper {
+    width: 75%;
+  }
+}
+
 @media only screen and (min-width: 1700px) {
   .main {
     width: 50%; 
@@ -524,8 +530,12 @@
     margin-bottom: 40px;
   }
 
-  .about-us-wrapper {
+  .what-we-do-wrapper, .how-we-do-it-wrapper, .about-us-wrapper {
     width: 50%;
+  }
+
+  .about-us-wrapper {
+    width: 75%;
     margin: auto;
   }
 
